@@ -1,8 +1,13 @@
+import Navbar from "./components/Navbar"
+import HomePage from "./pages/HomePage"
 
 function App() {
 
   return (
-      <h1>Hello Pomodoro</h1>
+    <div>
+      <Navbar />
+      <HomePage />
+    </div>
   )
 }
 
