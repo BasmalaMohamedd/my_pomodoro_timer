@@ -15,11 +15,13 @@ const Timer = () => {
             if(seconds > 0)
                 {
                     //decrement seconds
+                    setSeconds((seconds)=>seconds - 1);
                 }
                 else if(seconds == 0 && mins > 0)
                 {
                     //decrement minutes and set seconds to 59
-
+                    setMins((mins)=>mins - 1);
+                    setSeconds(59);
                 }
                 else
                 {
@@ -30,7 +32,7 @@ const Timer = () => {
         
     }
   return (
-    <div>
+    <>
         <div>
             <h1>Timer Body</h1>
             <div className='timerBody'>
@@ -43,7 +45,7 @@ const Timer = () => {
       <button>Cancel</button>
       <button onClick={()=>{console.log("start/pause btn"); startTimer();}}>Start/Pause</button>
       <button>Restart</button>
-    </div>
+    </>
   )
 }
 
