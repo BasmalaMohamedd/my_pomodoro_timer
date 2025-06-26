@@ -5,29 +5,18 @@ const Timer = () => {
     const [mins, setMins] = useState(25);
     const [seconds, setSeconds] = useState(0);
 
+    function decrementMins()
+    {
+        setMins((prevMins) => prevMins == 0? 0: prevMins - 1);
+
+    }
     //method has a side effect
     const startTimer = () =>{
+        //logic was not suitable because of how react works
         console.log("Hello from start timer function");
         setInterval(()=>{
-            //decrement timer with one second
-            console.log("Hello from start timer interval")
-
-            if(seconds > 0)
-                {
-                    //decrement seconds
-                    setSeconds((seconds)=>seconds - 1);
-                }
-                else if(seconds == 0 && mins > 0)
-                {
-                    //decrement minutes and set seconds to 59
-                    setMins((mins)=>mins - 1);
-                    setSeconds(59);
-                }
-                else
-                {
-                    //terminate function
-                    return;
-                }
+            
+            console.log("hello from interval")
         }, 1000);
         
     }
