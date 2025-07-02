@@ -7,6 +7,7 @@
 nav{
   display: flex;
   justify-content: end;
+  width: 100%;
 }
 
 nav .menu-icon-button {
@@ -18,4 +19,77 @@ nav .menu-icon-button {
 nav .menu-icon-button:hover{
   cursor:pointer;
 
+}
+
+.app-title{
+  color:#CC5546;
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.timer-body{
+  border-radius: 100%;
+  border: #CC5546 solid 7px;
+  background-color: #F5E0C6;
+  text-align: center;
+  align-content: center;
+  height: 20rem;
+  width: 20rem;
+  font-size: 3rem;
+  font-weight:500;
+  color: #D4473F;
+}
+
+
+.timer-controllers-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  
+}
+
+.timer-controller{
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.cancel , .restart{
+  background-color: #F2CDBB;
+}
+
+.start-pause{
+  background-color: #CC5546;
+}
+
+.timer-controller .icon{
+  width: 3rem;
+  height: 3rem;
+}
+
+
+footer{
+  background-color: #CC5546;
+  color: #F5E0C6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer a{
+  color:#FAFFB0;
 }

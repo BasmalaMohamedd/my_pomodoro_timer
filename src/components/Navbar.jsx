@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
 import menuInOrange from "../assets/icons/menu-icon-inOrange.png"
 import menuInBeige from "../assets/icons/menu-icon-inBeige.png"
-const Navbar = () => {
+const Navbar = ({isHomePage ,setIsHomePage}) => {
   //move state to the parent
-  const [isHomePage, setIsHomePage] = useState(true);
   function toggle(){
     setIsHomePage(prev=>!prev);
     //open menu and close it based on isHomePage

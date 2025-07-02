@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <h1>Pomodoro Timer header</h1>
+    <h1 className='app-title'>My Pomodoro Timer</h1>
   )
 }
 
