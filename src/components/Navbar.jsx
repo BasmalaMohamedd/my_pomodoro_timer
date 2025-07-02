@@ -1,7 +1,6 @@
 import menuInOrange from "../assets/icons/menu-icon-inOrange.png"
 import menuInBeige from "../assets/icons/menu-icon-inBeige.png"
 const Navbar = ({isHomePage ,setIsHomePage}) => {
-  //move state to the parent
   function toggle(){
     setIsHomePage(prev=>!prev);
     //open menu and close it based on isHomePage

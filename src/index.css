@@ -21,6 +21,11 @@ nav .menu-icon-button:hover{
 
 }
 
+.menu-icon{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .app-title{
   color:#CC5546;
   display: flex;
